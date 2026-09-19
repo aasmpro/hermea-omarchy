@@ -1,4 +1,4 @@
-# Hermea Omarchy plugin (1.4.0)
+# Hermea Omarchy plugin (0.1.0)
 
 The Hermes bar icon opens a focused dashboard for inspecting and controlling one
 selected Hermes profile. Opening the panel never starts the web dashboard.
