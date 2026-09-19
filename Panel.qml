@@ -8,7 +8,7 @@ import qs.Ui as Ui
 
 Ui.Panel {
   id: root
-  moduleName: "io.github.aasmpro.hermea"
+  moduleName: "hermea"
   manageIpc: false
 
   property var anchorItem: null

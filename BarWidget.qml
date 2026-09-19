@@ -3,7 +3,7 @@ import qs.Ui as Ui
 
 Ui.BarWidget {
   id: root
-  moduleName: "io.github.aasmpro.hermea"
+  moduleName: "hermea"
 
   readonly property bool opened: panelLoader.item ? panelLoader.item.opened : false
   readonly property bool popoutSwitchClosing: panelLoader.item ? panelLoader.item.popoutSwitchClosing : false

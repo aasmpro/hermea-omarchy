@@ -6,7 +6,7 @@ submodule.
 
 ## Plugin contract
 
-- Preserve plugin ID `io.github.aasmpro.hermea` unless a marketplace migration
+- Preserve plugin ID `hermea` unless a marketplace migration
   is explicitly planned.
 - Keep `manifest.json` at the repository root.
 - Keep `BarWidget.qml` as the `barWidget` entry point and preserve the public
@@ -53,4 +53,3 @@ blocking and document environment-specific limitations.
 ```bash
 omarchy plugin add https://github.com/aasmpro/hermea-omarchy.git --enable
 ```
-

@@ -19,13 +19,13 @@ omarchy plugin add https://github.com/aasmpro/hermea-omarchy.git --enable
 ```
 
 The plugin expects Hermes Agent to be installed separately. After Hermes has
-created at least one profile, add `io.github.aasmpro.hermea` to the desired bar section
+created at least one profile, add `hermea` to the desired bar section
 if Omarchy did not place it automatically.
 
 ## Remove
 
 ```bash
-omarchy plugin remove io.github.aasmpro.hermea
+omarchy plugin remove hermea
 ```
 
 Removing the plugin does not delete Hermes profiles, model configuration, or
@@ -166,7 +166,7 @@ so it continues to follow Hermes upgrades managed by Omarchy. PyYAML is loaded
 from the Hermes environment when it is not installed in the system Python.
 
 ```bash
-PLUGIN_DIR="$HOME/.config/omarchy/plugins/io.github.aasmpro.hermea"
+PLUGIN_DIR="$HOME/.config/omarchy/plugins/hermea"
 python3 "$PLUGIN_DIR/hermes-panel.py" snapshot default
 python3 "$PLUGIN_DIR/hermes-panel.py" model-catalog default
 python3 "$PLUGIN_DIR/hermes-panel.py" chat default
@@ -196,7 +196,7 @@ validates that the profile directory still exists before opening the terminal.
 ## Settings
 
 Hermea follows Omarchy's inline bar-widget settings model. Add settings to the
-`io.github.aasmpro.hermea` entry in `~/.config/omarchy/shell.json`; unknown or invalid
+`hermea` entry in `~/.config/omarchy/shell.json`; unknown or invalid
 values fall back to the defaults below.
 
 | Setting | Default | Purpose |
@@ -216,7 +216,7 @@ Example:
 
 ```json
 {
-  "id": "io.github.aasmpro.hermea",
+  "id": "hermea",
   "refreshIntervalSeconds": 30,
   "defaultProfile": "default",
   "dashboardHost": "127.0.0.1",
@@ -234,7 +234,7 @@ are stored under that profile's `ui` settings.
 ## Validation and troubleshooting
 
 ```bash
-PLUGIN_DIR="$HOME/.config/omarchy/plugins/io.github.aasmpro.hermea"
+PLUGIN_DIR="$HOME/.config/omarchy/plugins/hermea"
 jq empty "$PLUGIN_DIR/manifest.json"
 bash -n "$PLUGIN_DIR/open-dashboard.sh"
 omarchy plugin validate "$PLUGIN_DIR"
