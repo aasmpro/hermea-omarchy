@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "io.github.aasmpro.hermea",
+  "name": "Hermea",
+  "version": "1.4.0",
+  "author": "Hermea contributors",
+  "description": "A focused Hermes status dashboard with profile-aware actions.",
+  "kinds": [
+    "bar-widget"
+  ],
+  "entryPoints": {
+    "barWidget": "BarWidget.qml"
+  },
+  "barWidget": {
+    "displayName": "Hermea",
+    "description": "Shows Hermes health at a glance and provides fast profile chat, model, and dashboard actions.",
+    "category": "AI",
+    "allowMultiple": false,
+    "defaults": {
+      "refreshIntervalSeconds": 15,
+      "refreshModelsOnOpen": false,
+      "defaultProfile": "default",
+      "dashboardHost": "127.0.0.1",
+      "dashboardPort": 9119,
+      "panelWidth": 440,
+      "panelMaxHeight": 530,
+      "visibleStatusCards": ["gateway", "dashboard", "sessions", "jobs", "version", "skills"],
+      "showChatAction": true,
+      "showDashboardAction": true
+    }
+  }
+}
